@@ -1,9 +1,9 @@
 .navigator {
     overflow: hidden;
+    float: right;
 }
 
 .navigator a {
-    float: left;
     color: #000;
     text-align: left;
     padding: 12px 14px;
@@ -11,10 +11,6 @@
     font-size: 18px;
 }
 
-.navigator a:hover {
-    color: chocolate;
-}
-
-.navigator a.selected {
+.navigator a:hover, a.selected {
     color: chocolate;
 }
