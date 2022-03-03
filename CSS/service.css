@@ -125,7 +125,7 @@ span{
 .skill li { 
 	margin-bottom:70px; 
 	background:#030303; 
-	height:6px; 
+	height:15px; 
 	border-radius:3px; 
 	border-left:1px solid #111; 
 	border-top:1px solid #111; 
@@ -151,21 +151,21 @@ span{
 }
 
 .blueline { 
-	height: 3px; 
+	height: 9px; 
 	margin: 2px 0; 
 	background: #2187e7; 
 	position: absolute;
 	box-shadow: 0px 0px 10px 1px rgba(0,198,255,0.6);
 }
 .greenline { 
-	height: 3px; 
+	height: 9px; 
 	margin: 2px 0; 
 	background: #9ACD32; 
 	position: absolute;
 	box-shadow: 0px 0px 10px 1px rgba(173, 255, 47,0.4);
 }
 .redline { 
-	height: 3px; 
+	height: 9px; 
 	margin: 2px 0; 
 	background: #FF4500; 
 	position: absolute;
@@ -183,8 +183,8 @@ span{
 .css         { width:92%;  animation:css 2s ease-out;        }
 .php         { width:60%;  animation:php 2s ease-out;        }
 .javascript  { width:70%;  animation:javascript 2s ease-out; }
-.jquery      { width:30%;  animation:jquery 2s ease-out;     }
-.sql		 {width:20%;   animation:sql 2s ease-out;		 }
+.jquery      { width:45%;  animation:jquery 2s ease-out;     }
+.sql		 {width:40%;   animation:sql 2s ease-out;		 }
 
 /*platforms_CSS*/
 .androidStudio   { width:80%;  animation:androidStudio 2s ease-out;  }
@@ -213,8 +213,8 @@ span{
 @keyframes css         { 0% { width:0px; } 100% { width:92%; }  }
 @keyframes php         { 0% { width:0px; } 100% { width:60%; }  }
 @keyframes javascript  { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes jquery      { 0% { width:0px; } 100% { width:30%; }  }
-@keyframes sql        { 0% { width:0px; } 100% { width:20%; }  }
+@keyframes jquery      { 0% { width:0px; } 100% { width:45%; }  }
+@keyframes sql        { 0% { width:0px; } 100% { width:40%; }  }
 
 /*platforms_Animation*/
 @keyframes androidStudio   { 0% { width:0px; } 100% { width:80%; }  }
@@ -254,18 +254,33 @@ span{
 .progress-line.c span{
   width: 99%;
 }
-.progress-line.javascript span{
-  width: 70%;
+.progress-line.cplus span{
+  width: 97%;
 }
-.progress-line.jquery span{
-  width: 85%;
+.progress-line.java span{
+  width: 94%;
 }
-.progress-line.python span{
-  width: 50%;
+.progress-line.dart span{
+  width: 90%;
 }
-.progress-line.mysql span{
-  width: 75%;
+.progress-line.html span{
+  width: 95%;
 }
+.progress-line.css span{
+    width: 92%;
+  }
+  .progress-line.php span{
+    width: 60%;
+  }
+  .progress-line.javascript span{
+    width: 70%;
+  }
+  .progress-line.jquery span{
+    width: 45%;
+  }
+  .progress-line.sql span{
+    width: 40%;
+  }
 .progress-line span::before{
   position: absolute;
   content: "";
@@ -306,15 +321,30 @@ span{
 .progress-line.c span::after{
   content: "99%";
 }
+.progress-line.cplus span::after{
+    content: "97%";
+  }
+.progress-line.java span::after{
+    content: "94%";
+  }
+  .progress-line.dart span::after{
+    content: "90%";
+  }
+.progress-line.html span::after{
+  content: "95%";
+}
+.progress-line.css span::after{
+    content: "92%";
+  }
+.progress-line.php span::after{
+  content: "60%";
+}
 .progress-line.javascript span::after{
-  content: "70%";
-}
+    content: "70%";
+  }
 .progress-line.jquery span::after{
-  content: "85%";
-}
-.progress-line.python span::after{
-  content: "50%";
-}
-.progress-line.mysql span::after{
-  content: "75%";
+    content: "45%";
+  }
+.progress-line.sql span::after{
+  content: "40%";
 }
