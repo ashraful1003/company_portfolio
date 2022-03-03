@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.flexing {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+}
+
+.widthresponsive {
+    width: 25%;
+    float: left;
+    margin: 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.padding_TopBottom {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.vcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rcorners {
+    border-radius: 100px;
+    background: #ff675f;
+    box-shadow: 0px 8px 8px -4px #00000079;
+    width: 100px;
+    height: 100px;
+}
+
+.h3work {
+    margin-top: 25px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.pwork {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
