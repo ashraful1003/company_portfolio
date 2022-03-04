@@ -13,10 +13,11 @@ html {
     align-items: center;
     justify-content: space-between;
     padding-left: 7%;
-    padding-right: 7%;
+    padding-right: 8%;
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -24,6 +25,7 @@ html {
     font-size: 40px;
     font-style: bold;
     letter-spacing: 2px;
+    cursor: pointer;
     padding: 0px 70px 0px 10px;
 }
 
