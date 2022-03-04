@@ -8,55 +8,6 @@ html {
     scroll-behavior: smooth;
 }
 
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 7%;
-    padding-right: 7%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-}
-
-.logo {
-    color: white;
-    font-size: 40px;
-    font-style: bold;
-    letter-spacing: 2px;
-    padding: 0px 70px 0px 10px;
-}
-
-span {
-    color: orange;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    margin: 20px 0px;
-}
-
-.navbar ul li {
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 8px 20px;
-    transition: all .5s ease;
-}
-
-.navbar ul li a:hover, .navbar ul li .selected {
-    background-color: white;
-    color: orange;
-    box-shadow: 0 0 10px white;
-    font-weight: bold;
-}
-
 body {
     margin: 0;
     padding: 0;
