@@ -13,7 +13,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding-left: 7%;
-    padding-right: 8%;
+    padding-right: 7%;
     background-color: rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
@@ -57,26 +57,11 @@ span {
     font-weight: bold;
 }
 
-.sbtn {
-    background-color: yellow;
-    color: black;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: transform .4s;
-}
-
-.sbtn:hover {
-    transform: scale(1.2);
-}
-
 #home {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 840px;
+    height: 780px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -89,7 +74,7 @@ span {
     top: 0;
     right: 0;
     background: url('img.jpg') no-repeat center center/cover;
-    height: 850px;
+    height: 840px;
     width: 100%;
     z-index: -1;
     opacity: .8;
