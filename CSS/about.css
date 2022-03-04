@@ -60,7 +60,7 @@ body {
     height: 350px;
     margin: auto;
     perspective: 1000px;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 
@@ -167,6 +167,10 @@ body {
     border-radius: 50%;
 }
 
+.social_site a:hover{
+    transform: scale(1.20); 
+}
+
 .fa-facebook {
     background: #3b5998;
 }
@@ -177,4 +181,31 @@ body {
 
 .fa-whatsapp {
     background: #075e54;
+}
+
+.identity{
+    /* margin-top: 20px; */
+    margin: 30px auto 0px auto;
+    background-color: rgba(0, 0, 0, 0.685);
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 50%; */ 
+}
+
+.identity:hover .name,.identity:hover .qualification{
+    transform: scale(1.20);
+    transition: all 0.3s ease;
+}
+.name{
+    font-size: 20px;
+    color: #fdfcfc; 
+    margin-bottom: 2px;
+    
+}
+.qualification{
+    display: inline-block;
+    font-size: 13px;
+    color:orange;
+    border-bottom: 1px solid #fff; 
+ 
 }
