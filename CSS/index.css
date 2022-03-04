@@ -138,6 +138,7 @@ span2 {
     justify-content: center;
     color: white;
     border-radius: 50%;
+    text-decoration: none;
 }
 
 .social a:hover {
