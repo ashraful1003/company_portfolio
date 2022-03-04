@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    font-style: bold;
+    letter-spacing: 2px;
+    padding: 0px 70px 0px 10px;
+}
+
+span {
+    color: orange;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover, .navbar ul li .selected {
+    background-color: white;
+    color: orange;
+    box-shadow: 0 0 10px white;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* padding-bottom: 100px; */
+}
+  
+#contact {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+  }
+  
+  .section-header {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+    color: orange;
+  }
+  
+  .contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 1200px;
+  }
+  
+  
+.form{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 20px 0px;
+    width: 50%;
+
+}
+.input{
+    padding: 12px;
+    margin: 15px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+#msg{
+    width: 90%;
+    padding: 12px;
+    margin: 15px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+#send{
+    padding: 10px;
+    width: 20%;
+    margin: 20px;
+    border: none;
+    outline: none;
+}
+#send:hover{
+    cursor: pointer;
+    background-color: white;
+    color: orange;
+    box-shadow: 0 0 10px white;
+    font-weight: bold;
+}
+  
+  /* Location, Phone, Email Section */
+  .contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+    padding-top: 40px;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: orange;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+  .place {
+    margin-left: 62px;
+  }
+  
+  .phone {
+    margin-left: 56px;
+  }
+  
+  .gmail {
+    margin-left: 53px;
+  }
+  
+  .contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+  .contact-text a:hover {
+    color: orange;
+    text-decoration: none;
+  }
