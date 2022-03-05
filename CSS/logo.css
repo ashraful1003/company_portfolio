@@ -28,12 +28,13 @@ html{
     box-sizing: border-box;
 }
 .gallery img{
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 400px;
     margin: 20px;
     opacity: 80%;
 }
 img:hover{
-    transform: scale(1.1);
-    opacity: 100%;
+    opacity: 50%;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
 }
