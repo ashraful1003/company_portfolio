@@ -33,6 +33,7 @@ html{
     margin: 20px;
 }
 a:hover{
+    opacity: 50%;
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
