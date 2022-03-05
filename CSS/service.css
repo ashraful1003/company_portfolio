@@ -10,7 +10,7 @@ html{
 }
 
 body {
-    background:linear-gradient(rgb(0 0 0 / 82%),rgb(0 0 0 / 52%)),url('/IMAGES/img.jpg') no-repeat center center/cover;
+  background:linear-gradient(rgb(0 0 0 / 82%),rgb(0 0 0 / 52%)),url('/IMAGES/img.jpg') no-repeat center center/cover;
 	font: 12px normal Arial;
 	font-family: "Raleway",Arial,Helvetica,sans-serif;
 	/* background-color:rgb(197, 56, 56); */
