@@ -17,50 +17,6 @@ body {
     /* background-color:rgb(197, 56, 56); */
 }
 
-/* DROP DOWN */
-.dropdown {
-    float: left;
-    overflow: hidden;
-    text-decoration: none;
-    color: white;
-    transition: all .5s ease;
-  }
-    .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: white;
-    color: orange;
-    box-shadow: 0 0 10px white;
-    font-weight: bold;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: orange;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-family: sans-serif;
-    padding: 5px;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: white;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-
 .about-title {
     text-align: center;
     margin-bottom: 45px;
