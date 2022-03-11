@@ -1,23 +1,44 @@
+// //get method
+// function loadDoc() {
+//   var xhttp = new XMLHttpRequest();
+//   xhttp.onreadystatechange = function () {
 
-function sendEmail(to, subject) {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "ju2helloworld@gmail.com",
-    Password: "******",  //'test75@gmail.com,test4@gmail.com,test21@gmail.com'
-    To: to, //[“salesguy@gmail.com“, “boss@gmail.com“] 
-    From: "hello@gm.com",
-    Subject: subject,
-    Body: subject,
-  }).then(
-    message => alert(message)
-  );
+//     if (this.readyState == 4 && this.status == 200) {
+//       var hel = JSON.parse(this.responseText);
+//       console.log(hel[0].types);
+//     }
+//   };
+//   xhttp.open("GET", "http://localhost:3000/projects/", true);
+//   xhttp.send();
+// }
+
+// post method
+class Contacting{
+  constructor(username, email, messages){
+    this.username = username;
+    this.email = email;
+    this.messages = messages;
+  }
 }
 
-const form = document.getElementById("myform");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const data = new FormData(e.target);
-  const subject = `Welcome ${data.get("name")}`;
-  // const body = `Your idea ${data.get("idea")} has been submitted. Your selections are ${fruits.join(" ")} ${data.get("gender")}.`;
-  sendEmail("alamashraful1003@gmail.com", subject);
-});
+function loadDoc() {
+  var username = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var messages = document.getElementById("msg").value;
+  let userContact = new Contacting(username, email, messages);
+  
+  if(username!=="" && email!=="" && messages!==""){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        alert(this.responseText);
+      }
+      else{
+        alert(this.responseText);
+      }
+    };
+    xhttp.open("POST", "http://localhost:3000/contacts/", true);
+    xhttp.setRequestHeader("Content-type", "application/json");
+    xhttp.send(JSON.stringify(userContact));
+  }
+}
