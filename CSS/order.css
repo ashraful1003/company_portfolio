@@ -21,7 +21,7 @@
 .pop-up{
     display: none;
     position: absolute;
-    margin-top:100px;
+    margin-top:200px;
     margin-left:500px;
     /* left:50%; */
     /* transform: translate(-50%,-50%); */
@@ -30,7 +30,7 @@
     background: orange;
     box-shadow: 2px 2px 5px 5px rgb(26, 25, 25);
     border-radius: 5px;
-
+    z-index: 1;
 }
 .for-cancel{
     position:absolute;
