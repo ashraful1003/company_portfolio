@@ -6,7 +6,7 @@ xhttp.onreadystatechange = function () {
         buildTable(contacts);
     }
 };
-xhttp.open("GET", "http://localhost:3000/orders/", true);
+xhttp.open("GET", "http://127.0.0.1:3000/orders/", true);
 xhttp.send();
 
 function buildTable(data) {

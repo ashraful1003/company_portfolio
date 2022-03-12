@@ -15,21 +15,21 @@ function amount(){
 
     if (val==="selction")
         document.getElementById("money").value="";
-    else if(val==="vector")
+    else if(val==="Vector Portrait")
     document.getElementById("money").value="500";
-    else if(val==="logo")
+    else if(val==="Minimal Logo Design")
     document.getElementById("money").value="600";
-    else if(val==="animation")
+    else if(val==="Animated Video")
     document.getElementById("money").value="800";
-    else if(val==="ui-ux")
+    else if(val==="UI/UX Design")
     document.getElementById("money").value="900";
-    else if(val==="web")
+    else if(val==="Web Developing")
     document.getElementById("money").value="1500";
-    else if(val==="app")
+    else if(val==="App Developing")
     document.getElementById("money").value="1000";
-    else if(val==="video")
+    else if(val==="Video Editing")
     document.getElementById("money").value="2000";
-    else if(val==="photo")
+    else if(val==="Photography")
     document.getElementById("money").value="400";
 
 }
