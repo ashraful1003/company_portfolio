@@ -20,13 +20,15 @@ function paid() {
     var trnxid = document.getElementById("transaction").value;
 
     let userPayment = new Paying(name, email, types, total, method, phone, trnxid);
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState == 4 || this.status == 200) {
-            alert("Recorded!");
-        }
-    };
-    xhttp.open("POST", "http://localhost:3000/orders/", true);
-    xhttp.setRequestHeader("Content-type", "application/json");
-    xhttp.send(JSON.stringify(userPayment));
+    if (name !== "" && email !== "" && types != "selection" && total !== "" && method != "selection" && phone !== "" && trnxid != "") {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 || this.status == 200) {
+                alert("Recorded!");
+            }
+        };
+        xhttp.open("POST", "http://localhost:3000/orders/", true);
+        xhttp.setRequestHeader("Content-type", "application/json");
+        xhttp.send(JSON.stringify(userPayment));
+    }
 }
