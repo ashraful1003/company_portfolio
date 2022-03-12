@@ -8,24 +8,15 @@ function loginAdmin() {
         if (this.readyState == 4 && this.status == 200) {
             admin = JSON.parse(this.responseText);
             if (admin !== "") {
-                if (emails == admin[0].email && pass == admin[0].password) {
-                    alert("Yeah");
-                    window.location.href = "http://www.w3schools.com";
-                } else {
-                    alert("No");
+                if (admin[0].email === emails && admin[0].password === pass) {
+                    window.location.href = "http://127.0.0.1:5500/HTML/admin.html";
                 }
-                //     var adminEmail = admin[0].email;
-                //     var adminPass = admin[0].password
-                //     alert("Forwarding Admin?");
-                //     if (emails == adminEmail && pass == adminPass) {
-                //         window.location.href = "/HTML/admin.html";
-                //     }
-                //     else {
-                //         alert("Admin Login Failed!");
-                //     }
-            }
-            else {
-                alert("alsdf");
+                else {
+                    window.location.href = "http://127.0.0.1:5500/HTML/contact.html";
+                    alert("Login Failed!");
+                }
+            } else {
+                alert("Login Failed");
             }
         }
     };
