@@ -49,32 +49,31 @@
 
         <div class="pop-up" id="order-page">
             <div class="for-cancel" onclick="closeform()">&times;</div>
-            <div class="order-form">
-                <h1>Order Form</h1>
-                <form action="#" method="post">
-                    <p>Full Name:</p>
-
-                    <input id="name" type="text" name="Name" Placeholder="Enter Your Full Name" required>
-                    <p>Email address:</p>
-                    <input id="email" type="email" name="Email" Placeholder="Enter Your Email Address" required>
-
-                    <p>Portfolio Type:</p>
-                    <select id="portfolio" onchange="amount()">
-                        <option value="selection">Select Portfolio Type</option>
-                        <option value="Vector Portrait">Vector Portrait</option>
-                        <option value="Minimal Logo Design">Minimal Logo Design</option>
-                        <option value="Animated Video" selected>Animated Video</option>
-                        <option value="UI/UX Design">UI/UX Design</option>
-                        <option value="Web Developing">Web Developing</option>
-                        <option value="App Developing">App Developing</option>
-                        <option value="Video Editing">Video Editing</option>
-                        <option value="Photography">Photography</option>
-                    </select>
-
-                    <p>Total Payment:</p>
-                    <input id="money" type="text" Placeholder="Payment amount (900 Bdt for UI/UX Design)">
-
-
+                <div class="order-form">
+                    <h1>Order Form</h1>
+                        <form action="#" method="post">
+                            <p>Full Name:</p>
+                            
+                            <input id="name" type="text" name="Name"  Placeholder="Enter Your Full Name" required>                    
+                            <p>Email address:</p>
+                            <input id="email" type="email" name="Email"  Placeholder="Enter Your Email Address" required>
+                            
+                            <p>Portfolio Type:</p>
+                            <select id="portfolio" onchange="amount()">
+                                <option value="selection">Select Portfolio Type</option>
+                                <option value="Vector Portrait">Vector Portrait</option>
+                                <option value="Minimal Logo Design">Minimal Logo Design</option>
+                                <option value="Animated Video">Animated Video</option>
+                                <option value="UI/UX Design" selected>UI/UX Design</option>
+                                <option value="Web Developing">Web Developing</option>
+                                <option value="App Developing">App Developing</option>
+                                <option value="Video Editing">Video Editing</option>
+                                <option value="Photography">Photography</option>
+                            </select>
+                            
+                            <p>Total Payment:</p>
+                            <input id="money" type="text" Placeholder="Payment amount (900 Bdt for UI/UX Design)">
+                    
 
                     <!-- <legend>Please select your payment method:</legend> -->
                     <p>Please select your payment method:</p>
