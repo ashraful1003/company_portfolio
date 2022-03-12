@@ -30,11 +30,8 @@ function loadDoc() {
   if(username!=="" && email!=="" && messages!==""){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        alert(this.responseText);
-      }
-      else{
-        alert(this.responseText);
+      if (this.readyState == 4 || this.status == 200) {
+        alert("Message Sent!");
       }
     };
     xhttp.open("POST", "http://localhost:3000/contacts/", true);
