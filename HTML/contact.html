@@ -43,7 +43,7 @@
                 <input type="text" id="name" class="input" placeholder="Enter Your Name" required>
                 <input type="email" id="email" class="input" placeholder="Enter Your Email" required>
                 <textarea id="msg" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
-                <button onclick="loadDoc()">SEND</button>
+                <button id="send" onclick="loadDoc()">SEND</button>
             </form>
 
             <div class="direct-contact-container">
@@ -65,9 +65,33 @@
 
         </div>
 
+        <div class="at-first">
+                    <button id="login-button" onclick="openform()">Login</button>
+                </div>
+
+                <div class="pop-up" id="login-page">
+                    <div class="for-cancel" onclick="closeform()">&times;</div>
+                        <div class="log-in-form">
+                            <h1>Log In Form</h1>
+                                <form action="#" method="post">
+                                    <p>Email address</p>
+                                    <input type="text" name="Email"  Placeholder="Email Address" required>
+                        
+                                    <p>Password</p>
+                                    <input type="password" name="password" placeholder="Password" required>
+
+                                    <button type="submit">Log in</button>
+                                </form>
+                        </div>
+
+
+                </div>
+
+
     </section>
 
     <script src="/JS/contact.js"></script>
+    <script src="/JS/ContactButton.js"></script>
 </body>
 
 </html>

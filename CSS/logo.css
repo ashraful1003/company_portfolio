@@ -34,7 +34,7 @@ html{
     opacity: 80%;
 }
 img:hover{
-    opacity: 50%;
+    opacity: 100%;
     transform: scale(1.05);
     transition: all 0.3s ease;
 }
